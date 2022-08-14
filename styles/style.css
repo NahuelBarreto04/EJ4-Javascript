@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 65.2%;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+
+}
+
+.header {
+    font-family: monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    padding: 0 2rem;
+    background-color: #131415;
+
+}
+
+.logo__span {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    font-family: sans-serif;
+
+}
+
+.hero {
+    height: 100%;
+    padding: 1rem 0;
+
+}
+
+.hero__form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.hero__form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero__input {
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 30rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.btn {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #20205c;
+    border: none;
+    color: #fff;
+}
+
+.btn:active {
+    background-color: #131415;
+}
+
+.hero__container-card {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50rem;
+    background-color: #20205c;
+    border-radius: 1rem;
+
+}
+
+.card__header {
+    width: 100%;
+}
+
+.card__img {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+
+.card__title {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.card__title--small {
+    font-size: 2rem;
+    text-align: start;
+    align-self: stretch;
+    padding-left: 2rem;
+}
+
+.card__text {
+    font-size: 2rem;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.card__price {
+    font-size: 2rem;
+
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .menu {
+        display: none;
+    }
+
+    .hero__form {
+        flex-direction: column;
+    }
+
+    .hero__container-card {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
